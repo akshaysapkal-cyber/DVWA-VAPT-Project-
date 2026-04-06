@@ -9,7 +9,8 @@ The objective of this assessment was to identify common web application vulnerab
 ## Scope
 - Target: DVWA (running on Metasploitable 2)  
 - Environment: Local Lab Setup  
-- Testing Type: Web Application Security Testing  
+- Testing Type: Web Application Security Testing
+- Testing Level: Black-box (no prior knowledge of internal code)
 
 ## Tools Used
 - Nmap  
@@ -29,11 +30,13 @@ A structured VAPT methodology was followed:
 
 - SQL Injection  
   Severity: High  
-  Status: Confirmed  
+  Status: Confirmed
+  Reason: Allows unauthorized database access and authentication bypass
 
 - Cross-Site Scripting (XSS)  
   Severity: Medium  
-  Status: Confirmed  
+  Status: Confirmed
+  Reason: Enables execution of malicious scripts in user browser  
 
 ## SQL Injection
 
@@ -42,7 +45,7 @@ SQL Injection allows manipulation of database queries through user input, leadin
 
 ### Impact
 - Authentication bypass  
-- Access to sensitive data  
+- Unauthorized access to sensitive data  
 - Potential database compromise  
 
 ### Recommendation
@@ -58,7 +61,8 @@ XSS allows execution of malicious scripts in the user’s browser due to imprope
 ### Impact
 - Session hijacking  
 - User impersonation  
-- Malicious redirection  
+- Execution of malicious scripts in user browser  
+- Possible phishing or redirection attacks  
 
 ### Recommendation
 - Sanitize user input  
@@ -66,7 +70,14 @@ XSS allows execution of malicious scripts in the user’s browser due to imprope
 - Use Content Security Policy (CSP)  
 
 ## Conclusion
-The assessment identified critical and medium-level vulnerabilities in the application. These vulnerabilities demonstrate how improper input validation can lead to serious security risks. Proper security measures and coding practices are recommended to mitigate these issues.
+The assessment identified critical and medium-level vulnerabilities in the application. These vulnerabilities demonstrate how improper input validation can lead to serious security risks, Proper security measures and coding practices are recommended to mitigate these issues.
+
+## Proof of Concept
+
+Detailed evidence and screenshots are available in the respective vulnerability sections:
+
+- SQL Injection → [View Details](../vulnerabilities/sql-injection.md)  
+- Cross-Site Scripting (XSS) → [View Details](../vulnerabilities/xss.md)  
 
 ## Disclaimer
 This testing was performed in a controlled lab environment for educational purposes only. No real systems were harmed during this process.
