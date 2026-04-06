@@ -14,7 +14,7 @@ The SQL Injection vulnerability was tested on the DVWA SQL Injection module by e
 1' OR '1'='1
 
 ## Steps to Reproduce
-1. Navigate to DVWA → SQL Injection module  
+1. Navigate to DVWA >> Login `Username = admin, Password = password` >> SQL Injection module  
 2. Enter the payload in the input field  
 3. Submit the request  
 4. Observe the response returned by the application  
