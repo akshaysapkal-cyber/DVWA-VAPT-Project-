@@ -24,6 +24,10 @@ The application was tested by entering JavaScript payloads into input fields and
 ## Proof of Concept
 Screenshot showing a JavaScript alert popup executed in the browser.
 
+![xss cmd](https://github.com/akshaysapkal-cyber/DVWA-VAPT-Project-/blob/main/screenshots/xss.png?raw=true)
+
+![xss result](https://github.com/akshaysapkal-cyber/DVWA-VAPT-Project-/blob/main/screenshots/XSS%20result.png?raw=true)
+
 ## Impact
 - Execution of malicious scripts in the user's browser  
 - Theft of session cookies  
