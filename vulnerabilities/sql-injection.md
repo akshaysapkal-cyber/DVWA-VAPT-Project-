@@ -21,6 +21,7 @@ The SQL Injection vulnerability was tested on the DVWA SQL Injection module by e
 
 ## Proof of Concept
 Screenshot showing successful SQL Injection and extracted data from the database.
+![SQLi](https://github.com/akshaysapkal-cyber/DVWA-VAPT-Project-/blob/main/screenshots/SQLi.png?raw=true)
 
 ## Impact
 - Unauthorized access to sensitive database information  
