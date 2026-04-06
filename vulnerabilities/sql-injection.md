@@ -10,6 +10,9 @@ The objective of this test was to check whether the application is vulnerable to
 ## Testing Approach
 The SQL Injection vulnerability was tested on the DVWA SQL Injection module by entering crafted inputs into the user input field.
 
+## Tools Used
+- Web Browser
+
 ## Payload Used
 1' OR '1'='1
 
@@ -30,9 +33,6 @@ Screenshot showing successful SQL Injection and extracted data from the database
 - Authentication bypass  
 - Exposure of user credentials  
 - Potential full database compromise  
-
-## Tools Used
-- Web Browser  
 
 ## Remediation
 - Use parameterized queries (prepared statements)  
