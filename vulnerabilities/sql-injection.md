@@ -19,7 +19,7 @@ The SQL Injection vulnerability was tested on the DVWA SQL Injection module by e
 4. Observe the response returned by the application  
 5. The application returns multiple user records, indicating successful injection  
 
-## 📸 Proof of Concept
+## Proof of Concept
 Screenshot showing successful SQL Injection and extracted data from the database.
 
 ## Impact
