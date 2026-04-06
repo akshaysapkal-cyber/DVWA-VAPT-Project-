@@ -48,12 +48,12 @@ Initial reconnaissance was performed to understand the target application. This 
 ### SQL Injection
 SQL Injection vulnerability was identified in user input fields, allowing manipulation of backend database queries. This was used to bypass authentication and retrieve unintended data.
 
-[View Detailed SQL Injection Write-up](./vulnerabilities/sql-injection.md)
+[View SQL Injection Details](./vulnerabilities/sql-injection.md)
 
 ### Cross-Site Scripting (XSS)
 Cross-Site Scripting vulnerabilities were tested by injecting malicious scripts into input fields, demonstrating how client-side code execution can occur in a victim’s browser.
 
-[View Detailed XSS Write-up](./vulnerabilities/xss.md)
+[View XSS Details](./vulnerabilities/xss.md)
 
 ## Exploitation
 Basic exploitation techniques were applied to demonstrate the real impact of identified vulnerabilities, such as authentication bypass and script execution.
