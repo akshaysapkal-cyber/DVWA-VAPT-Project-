@@ -41,21 +41,23 @@ Screenshot showing successful SQL Injection and extracted data from the database
 - Apply least privilege principle to database users
 
 # Medium Level Testing (Using Burp Suite)
-#### Medium Level Testing (Using Burpsuite)
 ## Description
 At medium security level, input validation and filtering mechanisms are implemented to prevent basic SQL Injection attacks. Standard payloads containing special characters are restricted, making direct injection through the browser ineffective.
 
 ## Testing Approach
 Since manual SQL injection was restricted, Burp Suite was used to intercept and modify the HTTP request, bypassing client-side restrictions, This allowed direct manipulation of parameters and bypassed client-side input filtering.
 
+## Tools Used
+- Burp Suite (for intercepting and modifying HTTP requests)  
+- Web Browser  
+
 ## Payload Used
 1+OR+1%3D1
-
 (Decoded: `1 OR 1=1`, where `+` represents space and `%3D` represents `=`)
 
 ## Steps to Reproduce
 1. Set DVWA Security Level to Medium  
-2. Open DVWA → SQL Injection module  
+2. Open DVWA >> SQL Injection module  
 3. Configure browser to use Burp Suite proxy (127.0.0.1:8080)  
 4. Enable Intercept in Burp Suite  
 5. Enter a normal value (e.g., 1) and submit the request  
@@ -77,10 +79,6 @@ Screenshot showing successful SQL Injection after modifying request in Burp Suit
 - Burp Suite allowed interception and modification of requests  
 - URL-encoded payload successfully bypassed filtering  
 - The application remained vulnerable despite security controls  
-
-## Tools Used
-- Burp Suite (for intercepting and modifying HTTP requests)  
-- Web Browser  
 
 ## Key Learning
 Client-side input validation can be bypassed by intercepting and modifying requests. Security mechanisms relying only on input filtering are not sufficient to prevent SQL Injection.
