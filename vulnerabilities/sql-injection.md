@@ -22,6 +22,7 @@ The SQL Injection vulnerability was tested on the DVWA SQL Injection module by e
 
 ## Proof of Concept
 Screenshot showing successful SQL Injection and extracted data from the database.
+
 ![SQLi](https://github.com/akshaysapkal-cyber/DVWA-VAPT-Project-/blob/main/screenshots/SQLi.png?raw=true)
 
 ## Impact
@@ -68,6 +69,7 @@ Since manual SQL injection was restricted, Burp Suite was used to intercept and 
 Screenshot showing successful SQL Injection after modifying request in Burp Suite.
 
 ![Burp Suite](https://github.com/akshaysapkal-cyber/DVWA-VAPT-Project-/blob/main/screenshots/Burp%20Suite.png?raw=true)
+
 ![Burp Result](https://github.com/akshaysapkal-cyber/DVWA-VAPT-Project-/blob/main/screenshots/Burp%20Result.png?raw=true)
 
 ## Observation
