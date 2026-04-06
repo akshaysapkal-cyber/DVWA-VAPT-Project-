@@ -40,7 +40,7 @@ Screenshot showing successful SQL Injection and extracted data from the database
 - Apply least privilege principle to database users
 
 # Medium Level Testing (Using Burp Suite)
-
+#### Medium Level Testing (Using Burpsuite)
 ## Description
 At medium security level, input validation and filtering mechanisms are implemented to prevent basic SQL Injection attacks. Standard payloads containing special characters are restricted, making direct injection through the browser ineffective.
 
